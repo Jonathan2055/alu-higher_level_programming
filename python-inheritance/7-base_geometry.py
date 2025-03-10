@@ -4,6 +4,7 @@ Defines a class BaseGeometry with an unimplemented area method
 and an integer validation method.
 """
 
+
 class BaseGeometry:
     """
     A class representing base geometry.
