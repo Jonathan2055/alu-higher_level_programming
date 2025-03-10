@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Defines a class BaseGeometry with an unimplemented area method and an integer validation method.
+"""Defines a class BaseGeometry with an unimplemented area method and an integer validation method."""
 
 
 class BaseGeometry:
