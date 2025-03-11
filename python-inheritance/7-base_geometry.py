@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Defines a class BaseGeometry with an unimplemented area method and an integer validation method."""
+"""Defines a base geometry class BaseGeometry."""
 
 
 class BaseGeometry:
-    """Representing base geometry."""
+    """Reprsent base geometry."""
 
     def area(self):
         """Not yet implemented."""
