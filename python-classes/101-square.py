@@ -6,20 +6,17 @@ class Square:
     """Class representing a square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new Square instance.
-        
+        """Initialize a new Square instance.        
         Args:
             size (int): The length of a square's sides.
             position (tuple): The coordinates for square placement.
         """
         self.size = size
         self.position = position
-
     @property
     def size(self):
         """Retrieve the size of the square."""
         return self.__size
-
     @size.setter
     def size(self, value):
         """Set the size of the square with validation."""
@@ -70,4 +67,3 @@ class Square:
         for _ in range(self.__size):
             result.append(" " * self.__position[0] + "#" * self.__size)
         return "\n".join(result)
-
