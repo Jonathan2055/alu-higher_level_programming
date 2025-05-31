@@ -1,21 +1,27 @@
-
 #!/usr/bin/node
+
 class Rectangle {
   constructor (w, h) {
-    if ((w > 0) && (h > 0)) {
+    if (
+      Number.isInteger(w) && w > 0 &&
+      Number.isInteger(h) && h > 0
+    ) {
       this.width = w;
       this.height = h;
     }
+    // else leave empty (no width, no height)
   }
 
   print () {
+    if (!this.width || !this.height) {
+      // empty rectangle, do nothing
+      return;
+    }
+
     for (let i = 0; i < this.height; i++) {
-      let s = '';
-      for (let j = 0; j < this.width; j++) {
-        s += 'X';
-      }
-      console.log(s);
+      console.log('X'.repeat(this.width));
     }
   }
 }
+
 module.exports = Rectangle;
