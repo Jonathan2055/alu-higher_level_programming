@@ -1,6 +1,8 @@
 #!/usr/bin/node
-function add(a, b) {
-	  return a + b;
+function add (a, b) {
+  const d = a + b;
+  console.log(d);
 }
-console.log(add(parseInt(process.argv[2]), parseInt(process.argv[3])));
+
+add(Number(process.argv[2]), Number(process.argv[3]));
 
